@@ -12,6 +12,9 @@ namespace MVC
             if (controllerType == null)
                 throw new ArgumentNullException(nameof(controllerType));
 
+            if (string.IsNullOrEmpty(actionName) == true)
+                throw new ArgumentException(nameof(actionName));
+
             _redirector = ActionRedirector.ToAction(controllerType, actionName);
         }
 
