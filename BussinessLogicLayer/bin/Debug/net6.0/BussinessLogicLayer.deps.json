@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BussinessLogicLayer/1.0.0": {
+        "dependencies": {
+          "MVC": "1.0.0"
+        },
+        "runtime": {
+          "BussinessLogicLayer.dll": {}
+        }
+      },
+      "MVC/1.0.0": {
+        "runtime": {
+          "MVC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BussinessLogicLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MVC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

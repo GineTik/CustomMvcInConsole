@@ -1,0 +1,136 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "BussinessLogicLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MVC": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BussinessLogicLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BussinessLogicLayer.dll": {}
+        }
+      },
+      "DataLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLayer.dll": {}
+        }
+      },
+      "MVC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MVC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MVC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BussinessLogicLayer/1.0.0": {
+      "type": "project",
+      "path": "../BussinessLogicLayer/BussinessLogicLayer.csproj",
+      "msbuildProject": "../BussinessLogicLayer/BussinessLogicLayer.csproj"
+    },
+    "DataLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataLayer/DataLayer.csproj",
+      "msbuildProject": "../DataLayer/DataLayer.csproj"
+    },
+    "MVC/1.0.0": {
+      "type": "project",
+      "path": "../MVC/MVC.csproj",
+      "msbuildProject": "../MVC/MVC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "BussinessLogicLayer >= 1.0.0",
+      "DataLayer >= 1.0.0",
+      "MVC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Destr\\.nuget\\packages\\": {},
+    "D:\\Програми\\IDE\\Visual Studio 2022\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Програмування\\OOP repos\\lb1\\lb1\\lb1.csproj",
+      "projectName": "lb1",
+      "projectPath": "D:\\Програмування\\OOP repos\\lb1\\lb1\\lb1.csproj",
+      "packagesPath": "C:\\Users\\Destr\\.nuget\\packages\\",
+      "outputPath": "D:\\Програмування\\OOP repos\\lb1\\lb1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Програми\\IDE\\Visual Studio 2022\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Destr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Програмування\\OOP repos\\lb1\\BussinessLogicLayer\\BussinessLogicLayer.csproj": {
+              "projectPath": "D:\\Програмування\\OOP repos\\lb1\\BussinessLogicLayer\\BussinessLogicLayer.csproj"
+            },
+            "D:\\Програмування\\OOP repos\\lb1\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "D:\\Програмування\\OOP repos\\lb1\\DataLayer\\DataLayer.csproj"
+            },
+            "D:\\Програмування\\OOP repos\\lb1\\MVC\\MVC.csproj": {
+              "projectPath": "D:\\Програмування\\OOP repos\\lb1\\MVC\\MVC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.109\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

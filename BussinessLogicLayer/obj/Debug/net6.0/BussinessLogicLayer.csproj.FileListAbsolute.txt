@@ -1,0 +1,15 @@
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\bin\Debug\net6.0\BussinessLogicLayer.deps.json
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\bin\Debug\net6.0\BussinessLogicLayer.dll
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\bin\Debug\net6.0\ref\BussinessLogicLayer.dll
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\bin\Debug\net6.0\BussinessLogicLayer.pdb
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.csproj.AssemblyReference.cache
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.AssemblyInfoInputs.cache
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.AssemblyInfo.cs
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.dll
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\ref\BussinessLogicLayer.dll
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.pdb
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\bin\Debug\net6.0\MVC.dll
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\bin\Debug\net6.0\MVC.pdb
+D:\Програмування\OOP repos\lb1\BussinessLogicLayer\obj\Debug\net6.0\BussinessLogicLayer.csproj.CopyComplete

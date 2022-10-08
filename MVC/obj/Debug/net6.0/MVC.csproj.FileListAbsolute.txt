@@ -1,0 +1,12 @@
+D:\Програмування\OOP repos\lb1\MVC\bin\Debug\net6.0\MVC.deps.json
+D:\Програмування\OOP repos\lb1\MVC\bin\Debug\net6.0\MVC.dll
+D:\Програмування\OOP repos\lb1\MVC\bin\Debug\net6.0\ref\MVC.dll
+D:\Програмування\OOP repos\lb1\MVC\bin\Debug\net6.0\MVC.pdb
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.csproj.AssemblyReference.cache
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.AssemblyInfoInputs.cache
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.AssemblyInfo.cs
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.csproj.CoreCompileInputs.cache
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.dll
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\ref\MVC.dll
+D:\Програмування\OOP repos\lb1\MVC\obj\Debug\net6.0\MVC.pdb
