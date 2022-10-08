@@ -1,0 +1,4 @@
+Student 11
+{"FirstName":"1","LastName":"1","StudentId":null,"Course":1,"Birthday":"2003-10-10T00:00:00","Id":"11"}
+Student ИмяФамилия
+{"FirstName":"\u0418\u043C\u044F","LastName":"\u0424\u0430\u043C\u0438\u043B\u0438\u044F","StudentId":null,"Course":2,"Birthday":"2002-01-10T00:00:00","Id":"\u0418\u043C\u044F\u0424\u0430\u043C\u0438\u043B\u0438\u044F"}

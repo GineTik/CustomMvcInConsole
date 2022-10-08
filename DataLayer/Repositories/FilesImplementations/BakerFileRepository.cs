@@ -13,7 +13,7 @@ namespace DataLayer.Repositories.FilesImplementations
 
         public Baker Get(string id) => _repository.Get(id);
 
-        public Baker GetAll() => _repository.GetAll();
+        public List<Baker> GetAll() => _repository.GetAll();
 
         public void Update(Baker entity) => _repository.Update(entity);
     }

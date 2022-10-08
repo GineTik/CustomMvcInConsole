@@ -14,7 +14,14 @@ namespace lb1.Views.Home
             {
                 new ViewMenuItem("Додати нового користувача", 
                     ActionRedirector.ToAction<StudentController>(nameof(StudentController.AddStudent))),
-                new ViewMenuItem("Без дії", ActionRedirector.LastAction),
+
+                new ViewMenuItem("Список усіх студентів",
+                    ActionRedirector.ToAction<StudentController>(nameof(StudentController.List))),
+
+                new ViewMenuItem("Список усіх байкерів", IRedirector.Exit),
+
+                new ViewMenuItem("Список усіх підприємців", IRedirector.Exit),
+
                 new ViewMenuItem("Вийти", IRedirector.Exit),
             };
         }

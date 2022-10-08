@@ -23,11 +23,11 @@ namespace DataLayer.Repositories.FilesImplementations
             if (Get(entity.Id) != null)
                 throw new InvalidOperationException("entity with this id is already exists");
 
-            string nameEntity = nameof(entity);
+            string nameEntity = entity.GetType().Name;
             string json = JsonSerializer.Serialize(entity);
 
-            using StreamWriter fileStream = new(_filePath);
-            fileStream.WriteLine($"{nameEntity} ${entity.Id}");
+            using StreamWriter fileStream = new(_filePath, append: true);
+            fileStream.WriteLine($"{nameEntity} {entity.Id}");
             fileStream.WriteLine(json);
         }
 
@@ -38,12 +38,24 @@ namespace DataLayer.Repositories.FilesImplementations
 
         public TEntity Get(string id)
         {
-            throw new NotImplementedException();
+            return GetAll().FirstOrDefault(x => x.Id == id);
         }
 
-        public TEntity GetAll()
+        public List<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            using StreamReader reader = new StreamReader(_filePath);
+
+            List<TEntity> entities = new List<TEntity>();
+            while(reader.EndOfStream == false)
+            {
+                string header = reader.ReadLine();
+                string json = reader.ReadLine();
+
+                TEntity entity = JsonSerializer.Deserialize<TEntity>(json);
+
+                entities.Add(entity);
+            }
+            return entities;
         }
 
         public void Update(TEntity entity)

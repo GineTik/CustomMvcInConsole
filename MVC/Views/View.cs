@@ -1,5 +1,4 @@
-﻿using MVC.Redirectors.Implements;
-using MVC.Redirectors.Interfaces;
+﻿using MVC.Redirectors.Interfaces;
 using MVC.ViewElements.MenuList;
 
 namespace MVC.Views

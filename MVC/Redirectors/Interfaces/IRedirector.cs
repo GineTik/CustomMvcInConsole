@@ -5,5 +5,6 @@
         IRedirector Redirect();
 
         public static IRedirector Exit => null;
+        public static IRedirector None => null;
     }
 }

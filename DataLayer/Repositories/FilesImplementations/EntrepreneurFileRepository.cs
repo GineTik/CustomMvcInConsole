@@ -13,7 +13,7 @@ namespace DataLayer.Repositories.FilesImplementations
 
         public Entrepreneur Get(string id) => _repository.Get(id);
 
-        public Entrepreneur GetAll() => _repository.GetAll();
+        public List<Entrepreneur> GetAll() => _repository.GetAll();
 
         public void Update(Entrepreneur entity) => _repository.Update(entity);
     }
