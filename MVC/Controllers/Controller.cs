@@ -1,11 +1,12 @@
-﻿using MVC.Redirectors.Interfaces;
+﻿using MVC.Redirecters.Implements;
+using MVC.Redirecters.Interfaces;
 using MVC.Views;
 
 namespace MVC.Controllers
 {
     public class Controller
     {
-        public IRedirector InvokeAction(string action, params object[] param)
+        public IRedirecter InvokeAction(string action, params object[] param)
         {
             if (param == null)
                 throw new ArgumentNullException(nameof(param));
@@ -15,10 +16,20 @@ namespace MVC.Controllers
             if (method == null)
                 throw new InvalidOperationException($"action '{action}' is not found");
 
-            if (method.ReturnType != typeof(IRedirector))
-                throw new InvalidOperationException($"action '{action}' is not have 'IRedirector' return type");
+            if (method.ReturnType != typeof(IRedirecter))
+                throw new InvalidOperationException($"action '{action}' is not have '{nameof(IRedirecter)}' return type");
 
-            return (IRedirector)method.Invoke(this, param);
+            return (IRedirecter)method.Invoke(this, param);
+        }
+
+        public IRedirecter Text(string text)
+        {
+            return TextRedirecter.DisplayText(text);
+        }
+
+        public IRedirecter View(View view)
+        {
+            return ViewRedirecter.OpenView(view);
         }
     }
 }

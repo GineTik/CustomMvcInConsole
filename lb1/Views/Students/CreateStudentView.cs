@@ -1,11 +1,10 @@
 ﻿using BussinessLogicLayer.Consoles;
 using DataLayer.Entities;
 using lb1.Controllers;
-using MVC.Redirectors.Implements;
-using MVC.Redirectors.Interfaces;
+using MVC.Redirecters.Implements;
+using MVC.Redirecters.Interfaces;
 using MVC.ViewElements.MenuList;
 using MVC.Views;
-using System;
 
 namespace lb1.Views.Students
 {
@@ -19,17 +18,17 @@ namespace lb1.Views.Students
             MenuList = new()
             {
                 new ViewMenuItem("Підтвердити введені дані",
-                    ActionRedirector.ToAction<StudentController>(nameof(StudentController.AddStudent), _student)),
+                    ActionRedirecter.ToAction<StudentController>(nameof(StudentController.AddStudent), _student)),
 
                 new ViewMenuItem("Ввести заново", 
-                    ActionRedirector.LastAction),
+                    ActionRedirecter.ToLastAction),
 
                 new ViewMenuItem("Відмінити додавання", 
-                    ActionRedirector.ToAction<HomeController>(nameof(HomeController.Index))),
+                    ActionRedirecter.ToAction<HomeController>(nameof(HomeController.Index))),
             };
         }
 
-        public override IRedirector Show()
+        public override IRedirecter Show()
         {
             Console.WriteLine("Заповніть дані студента\n");
 
@@ -41,7 +40,7 @@ namespace lb1.Views.Students
             Console.WriteLine();
             DisplayMenu();
 
-            return IRedirector.None;
+            return IRedirecter.None;
         }
     }
 }

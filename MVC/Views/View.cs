@@ -1,4 +1,6 @@
-﻿using MVC.Redirectors.Interfaces;
+﻿using MVC.Controllers;
+using MVC.Redirecters.Implements;
+using MVC.Redirecters.Interfaces;
 using MVC.ViewElements.MenuList;
 
 namespace MVC.Views
@@ -7,7 +9,7 @@ namespace MVC.Views
     {
         public List<ViewMenuItem> MenuList { get; set; } = new List<ViewMenuItem>();
 
-        public abstract IRedirector Show();
+        public abstract IRedirecter Show();
 
         public void DisplayMenu()
         {
@@ -16,7 +18,7 @@ namespace MVC.Views
                 Console.WriteLine($"{++i}. {item.Message}");
         }
 
-        public IRedirector GetAnswer()
+        public IRedirecter GetAnswer()
         {
             if (MenuList.Count == 0)
                 throw new InvalidOperationException("menu is empty");
@@ -33,7 +35,18 @@ namespace MVC.Views
                     successKey = false;
             }
 
-            return MenuList[key].Redirector;
+            return MenuList[key].Redirecter;
+        }
+
+        public IRedirecter ToAction<TController>(string actionName)
+            where TController : Controller
+        {
+            return ActionRedirecter.ToAction<TController>(actionName);
+        }
+
+        public IRedirecter DisplayText(string text)
+        {
+            return TextRedirecter.DisplayText(text);
         }
     }
 }

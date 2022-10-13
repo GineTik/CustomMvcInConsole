@@ -10,3 +10,4 @@ D:\Програмування\OOP repos\lb1\DataLayer\obj\Debug\net6.0\DataLayer
 D:\Програмування\OOP repos\lb1\DataLayer\obj\Debug\net6.0\DataLayer.dll
 D:\Програмування\OOP repos\lb1\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll
 D:\Програмування\OOP repos\lb1\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+D:\Програмування\OOP repos\lb1\DataLayer\bin\Debug\net6.0\DataLayer.dll.config

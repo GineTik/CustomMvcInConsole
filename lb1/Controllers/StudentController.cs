@@ -1,8 +1,8 @@
-﻿using MVC.Redirectors.Implements;
+﻿using MVC.Redirecters.Implements;
 using DataLayer.Entities;
 using MVC.Controllers;
 using lb1.Views.Students;
-using MVC.Redirectors.Interfaces;
+using MVC.Redirecters.Interfaces;
 using DataLayer.Repositories.Interfaces;
 using DataLayer.Repositories.FilesImplementations;
 
@@ -17,22 +17,33 @@ namespace lb1.Controllers
             _studentRepository = new StudentFileRepository();
         }
 
-        public IRedirector AddStudent()
+        public IRedirecter AddStudent()
         {
-            return ViewRedirector.OpenView(new CreateStudentView());
+            return View(new CreateStudentView());
         }
 
-        public IRedirector AddStudent(Student student)
+        public IRedirecter AddStudent(Student student)
         {
             student.Id = student.FirstName + student.LastName;
             _studentRepository.Add(student);
-            return ActionRedirector.ToAction<HomeController>("Index");
+            return ActionRedirecter.ToAction<HomeController>(nameof(HomeController.Index));
         }
 
-        public IRedirector List()
+        public IRedirecter List()
         {
             var students = _studentRepository.GetAll();
-            return ViewRedirector.OpenView(new StudentListView(students));
+            return View(new StudentListView(students));
+        }
+
+        public IRedirecter JumpFromParachute()
+        {
+            return View(new JumpStudentsView());
+        }
+
+        public IRedirecter GetStudentsByTask()
+        {
+            var students = _studentRepository.GetStudentsByTask();
+            return View(new StudentListView(students));
         }
     }
 }

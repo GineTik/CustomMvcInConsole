@@ -13,7 +13,15 @@ namespace DataLayer.Repositories.FilesImplementations
 
         public Student Get(string id) => _repository.Get(id);
 
-        public List<Student> GetAll() => _repository.GetAll();
+        public IEnumerable<Student> GetAll() => _repository.GetAll().Where(o => o is Student);
+
+        public IEnumerable<Student> GetStudentsByTask()
+        {
+            return GetAll().Where(
+                o => o.Course == 4 &&
+                o.Birthday.Month >= 3 &&
+                o.Birthday.Month < 6);
+        }
 
         public void Update(Student entity) => _repository.Update(entity);
     }

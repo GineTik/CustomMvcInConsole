@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "UkFZEjVu0AUvOeJQl9kFpnsWUbgUHFkS+a7s5XXFWRUve7/TiMstJbnCZXFqIRlV62Q4CTPizpRWvUzV2WJrhw==",
+  "dgSpecHash": "Cos6voDKOXON+9Y+ojBt+wwRCGITUAtq/7xAhCjpDpIXkSLit5/E6GcRq9TZ+ZHzb1ZfzNFFDtBaWvpsxwagWA==",
   "success": true,
   "projectFilePath": "D:\\Програмування\\OOP repos\\lb1\\DataLayer\\DataLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Destr\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Destr\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+    "C:\\Users\\Destr\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Destr\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Destr\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Destr\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Destr\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

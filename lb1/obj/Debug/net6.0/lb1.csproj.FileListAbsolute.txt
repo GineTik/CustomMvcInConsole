@@ -20,3 +20,16 @@ D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\BussinessLogicL
 D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\BussinessLogicLayer.pdb
 D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\MVC.dll
 D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\MVC.pdb
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\DataLayer.dll.config
+D:\Програмування\OOP repos\lb1\lb1\bin\Debug\net6.0\lb1.dll.config

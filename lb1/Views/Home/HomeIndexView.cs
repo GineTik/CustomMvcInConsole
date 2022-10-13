@@ -1,8 +1,8 @@
-﻿using MVC.Redirectors.Implements;
+﻿using MVC.Redirecters.Implements;
 using MVC.Views;
 using MVC.ViewElements.MenuList;
 using lb1.Controllers;
-using MVC.Redirectors.Interfaces;
+using MVC.Redirecters.Interfaces;
 
 namespace lb1.Views.Home
 {
@@ -13,24 +13,30 @@ namespace lb1.Views.Home
             MenuList = new List<ViewMenuItem>()
             {
                 new ViewMenuItem("Додати нового користувача", 
-                    ActionRedirector.ToAction<StudentController>(nameof(StudentController.AddStudent))),
+                    ToAction<HomeController>(nameof(HomeController.AddUser))),
 
                 new ViewMenuItem("Список усіх студентів",
-                    ActionRedirector.ToAction<StudentController>(nameof(StudentController.List))),
+                    ToAction<StudentController>(nameof(StudentController.List))),
 
-                new ViewMenuItem("Список усіх байкерів", IRedirector.Exit),
+                new ViewMenuItem("Список усіх байкерів", ActionRedirecter.ToLastAction),
 
-                new ViewMenuItem("Список усіх підприємців", IRedirector.Exit),
+                new ViewMenuItem("Список усіх підприємців", ActionRedirecter.ToLastAction),
+                
+                new ViewMenuItem("Пригнути з парашута",
+                    ToAction<StudentController>(nameof(StudentController.JumpFromParachute))),
 
-                new ViewMenuItem("Вийти", IRedirector.Exit),
+                new ViewMenuItem("Отримати усіх студентів, які на 4 курсі та народились навесні", 
+                    ToAction<StudentController>(nameof(StudentController.GetStudentsByTask))),
+
+                new ViewMenuItem("Вийти", IRedirecter.Exit),
             };
         }
 
-        public override IRedirector Show()
+        public override IRedirecter Show()
         {
             Console.WriteLine("Вітаємо вас в адмін панелі\n");
             DisplayMenu();
-            return null;
+            return IRedirecter.None;
         }
     }
 }

@@ -10,7 +10,7 @@ namespace DataLayer.Repositories.Interfaces
         void Delete(TKey id);
         void Update(TEntity entity);
         TEntity Get(TKey id);
-        List<TEntity> GetAll();
+        IEnumerable<TEntity> GetAll();
     }
 
     public interface IRepository<TEntity> : IRepository<TEntity, string>

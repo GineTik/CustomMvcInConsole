@@ -1,11 +1,11 @@
-﻿using MVC.Redirectors.Implements;
-using MVC.Redirectors.Interfaces;
+﻿using MVC.Redirecters.Implements;
+using MVC.Redirecters.Interfaces;
 
 namespace MVC
 {
     public class ConsoleApplication
     {
-        private IRedirector _redirector;
+        private IRedirecter _redirecter;
 
         public ConsoleApplication(Type controllerType, string actionName)
         {
@@ -15,7 +15,7 @@ namespace MVC
             if (string.IsNullOrEmpty(actionName) == true)
                 throw new ArgumentException(nameof(actionName));
 
-            _redirector = ActionRedirector.ToAction(controllerType, actionName);
+            _redirecter = ActionRedirecter.ToAction(controllerType, actionName);
         }
 
         public void Run()
@@ -23,9 +23,9 @@ namespace MVC
             bool exit = false;
             while(exit == false)
             {
-                _redirector = _redirector.Redirect();
+                _redirecter = _redirecter.Redirect();
                 
-                if (_redirector == null)
+                if (_redirecter == null)
                     exit = true;
 
                 Console.Clear();

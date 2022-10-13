@@ -1,13 +1,14 @@
 ﻿using DataLayer.Entities;
 using DataLayer.Repositories.Interfaces;
 using System.Text.Json;
+using System.Configuration;
 
 namespace DataLayer.Repositories.FilesImplementations
 {
     public class FileRepository<TEntity> : IRepository<TEntity>
         where TEntity : Entity
     {
-        private const string _filePath = @"../../db.txt";
+        private readonly string _filePath = ConfigurationManager.AppSettings["PathToFile"];
 
         public FileRepository()
         {
@@ -33,7 +34,12 @@ namespace DataLayer.Repositories.FilesImplementations
 
         public void Delete(string id)
         {
-            throw new NotImplementedException();
+            var entity = Get(id);
+            
+            if (entity == null)
+                throw new InvalidOperationException("not found entity by this id");
+            
+            // дописати
         }
 
         public TEntity Get(string id)
@@ -41,7 +47,7 @@ namespace DataLayer.Repositories.FilesImplementations
             return GetAll().FirstOrDefault(x => x.Id == id);
         }
 
-        public List<TEntity> GetAll()
+        public IEnumerable<TEntity> GetAll()
         {
             using StreamReader reader = new StreamReader(_filePath);
 
@@ -59,11 +65,6 @@ namespace DataLayer.Repositories.FilesImplementations
         }
 
         public void Update(TEntity entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        private TEntity EntityIsExists(string id)
         {
             throw new NotImplementedException();
         }
